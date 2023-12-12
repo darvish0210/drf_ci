@@ -38,5 +38,5 @@ jobs:
             echo "DEBUG='${{ secrets.DEBUG }}'" >> .env
 
             source /home/ubuntu/venv/bin/activate
-            pip install -r requirements.txt
+            pip install -r drf_test/requirements.txt
             sudo systemctl restart drf_test.service
